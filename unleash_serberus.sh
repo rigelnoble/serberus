@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directories where serberus.lock will be created.
-# These directories need to already exist.
+# These directories need to pre-exist.
 paths=(
   "/path/to/first"
   "/path/to/second"
