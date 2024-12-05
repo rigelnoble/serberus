@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Array of directories where serberus.lock will be created. These directories need to already exist.
+# Directories where serberus.lock will be created.
+# These directories need to already exist.
 paths=(
   "/path/to/first"
   "/path/to/second"
@@ -10,13 +11,12 @@ paths=(
 # Loop through each path specified above.
 for dir_path in "${paths[@]}"; do
 
-  # Make file path
   file_path="${dir_path%/}/serberus.lock"
 
-  # Unleash serberus.lock and make path immutable.
-  if touch "$file_path" && sudo chattr +i "$file_path"; then
-    echo "Created and set immutable: $file_path"
+  # Unleash serberus.lock - Create file and make immutable.
+  if touch "$file_path" 2>/dev/null && sudo chattr +i "$file_path"; then
+    echo "succesfully unleashed: $file_path"
   else
-    echo "Error: $file_path"
+    echo "error. could not let the dogs out: $file_path"
   fi
 done
