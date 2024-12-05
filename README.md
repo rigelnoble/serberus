@@ -6,7 +6,7 @@ A dead simple script to reduce the risk of accidentally deleting important direc
 This assists in preventing the accidental deletion of the preceding directories.
 I wish I could say I made this before I needed it, but unfortunately necessity is the mother of invention.
 
-serberus' intended use case is to protect parent / top-level directories containing important files, such folder(s) on a HDD being used as a SMB share on Linux file ssytems.
+serberus' intended use case is to protect parent / top-level directories containing important files, such folder(s) on a HDD being used as a SMB share on Linux file systems.
 It's designed to prevent you from deleting important parent directories by mistake, while still allowing you to freely modify child directories and their contents.
 
 For example, if located at `/mnt/hdd/files/serberus.lock`, it will prevent you from accidentally deleting `/mnt/hdd/files/` (and completely nuking your entire HDD), but you are able to freely modify directories such `/mnt/hdd/files/media/` and beyond without hindrance. 
