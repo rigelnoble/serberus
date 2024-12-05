@@ -24,9 +24,7 @@ That's it! You are now mildly protected from careless mistakes when home-labbing
 Repeat steps 1-3 for `unleash_serberus.sh` to remove `serberus.lock` from the specified file paths.
 
 ### Useless ###
-The name is inspired by 'Cerberus', the [*"multi-headed dog that guards the gates of the Underworld to prevent the dead from leaving"*](https://en.wikipedia.org/wiki/Cerberus).
-
-It's also a play on words of 'server' and [the letter](https://knowyourmeme.com/memes/b-button-emoji) 🅱️.
+The name is inspired by 'Cerberus', the [*"multi-headed dog that guards the gates of the Underworld"*](https://en.wikipedia.org/wiki/Cerberus). It's also a play on words of 'server' and [the letter](https://knowyourmeme.com/memes/b-button-emoji) 🅱️.
 
 
 ### Limitations ###
